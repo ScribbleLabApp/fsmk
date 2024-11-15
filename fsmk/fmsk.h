@@ -48,3 +48,4 @@ FOUNDATION_EXPORT const unsigned char ScribbleFSMKVersionString[];
 /* Scribble File Sys Management Kit */
 #include <__fmsk_core.h>
 #include <fsmklog.h>
+#include <cyfn.h>

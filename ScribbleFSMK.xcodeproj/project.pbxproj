@@ -82,6 +82,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
 				fmsk.h,
+				include/cyfn.h,
 				include/fsmklog.h,
 				swtchd.h,
 			);
