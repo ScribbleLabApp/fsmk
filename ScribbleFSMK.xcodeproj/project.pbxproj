@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3802E1C92CE7C21300EA0D51 /* fsmk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3802E1BE2CE7C21300EA0D51 /* fsmk.framework */; };
+		3802E2052CE7C39800EA0D51 /* _fsmk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */; };
+		3802E2062CE7C39800EA0D51 /* _fsmk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3802E20D2CE7C4D900EA0D51 /* Stable.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */; };
+		3802E20E2CE7C4D900EA0D51 /* DEBUB.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */; };
+		3802E20F2CE7C4D900EA0D51 /* Stable.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */; };
+		3802E2102CE7C4D900EA0D51 /* DEBUB.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */; };
+		38A390682CE7D6B600730B3C /* _fsmk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */; };
+		38A390692CE7D6B600730B3C /* _fsmk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38A3906E2CE7D70600730B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A3906D2CE7D70600730B3C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3802E1CA2CE7C21300EA0D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3802E1B52CE7C21300EA0D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3802E1BD2CE7C21300EA0D51;
+			remoteInfo = ScribbleFSMK;
+		};
+		3802E2072CE7C39800EA0D51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3802E1B52CE7C21300EA0D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3802E1DD2CE7C27C00EA0D51;
+			remoteInfo = _fsmk;
+		};
+		38A3906A2CE7D6B600730B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3802E1B52CE7C21300EA0D51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3802E1DD2CE7C27C00EA0D51;
+			remoteInfo = _fsmk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3802E2092CE7C39800EA0D51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3802E2062CE7C39800EA0D51 /* _fsmk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A3906C2CE7D6B600730B3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38A390692CE7D6B600730B3C /* _fsmk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3802E1BE2CE7C21300EA0D51 /* fsmk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fsmk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3802E1C82CE7C21300EA0D51 /* ScribbleFSMKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribbleFSMKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = _fsmk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEBUB.xcconfig; sourceTree = "<group>"; };
+		3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stable.xcconfig; sourceTree = "<group>"; };
+		38A3906D2CE7D70600730B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3802E1D02CE7C21300EA0D51 /* Exceptions for "fsmk" folder in "fsmk" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				fmsk.h,
+				include/fsmklog.h,
+				swtchd.h,
+			);
+			target = 3802E1BD2CE7C21300EA0D51 /* fsmk */;
+		};
+		3802E1EF2CE7C27C00EA0D51 /* Exceptions for "_fsmk" folder in "_fsmk" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				_fsmk.h,
+			);
+			target = 3802E1DD2CE7C27C00EA0D51 /* _fsmk */;
+		};
+		3802E2022CE7C34300EA0D51 /* Exceptions for "ScribbleFSMKTests" folder in "ScribbleFSMKTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ScribbleFSMKTests.swift,
+			);
+			target = 3802E1C72CE7C21300EA0D51 /* ScribbleFSMKTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3802E1C02CE7C21300EA0D51 /* fsmk */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3802E1D02CE7C21300EA0D51 /* Exceptions for "fsmk" folder in "fsmk" target */,
+			);
+			path = fsmk;
+			sourceTree = "<group>";
+		};
+		3802E1DF2CE7C27C00EA0D51 /* _fsmk */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3802E1EF2CE7C27C00EA0D51 /* Exceptions for "_fsmk" folder in "_fsmk" target */,
+			);
+			path = _fsmk;
+			sourceTree = "<group>";
+		};
+		3802E2002CE7C34300EA0D51 /* ScribbleFSMKTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3802E2022CE7C34300EA0D51 /* Exceptions for "ScribbleFSMKTests" folder in "ScribbleFSMKTests" target */,
+			);
+			path = ScribbleFSMKTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3802E1BB2CE7C21300EA0D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3802E2052CE7C39800EA0D51 /* _fsmk.framework in Frameworks */,
+				38A3906E2CE7D70600730B3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1C52CE7C21300EA0D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3802E1C92CE7C21300EA0D51 /* fsmk.framework in Frameworks */,
+				38A390682CE7D6B600730B3C /* _fsmk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1DB2CE7C27C00EA0D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3802E1B42CE7C21300EA0D51 = {
+			isa = PBXGroup;
+			children = (
+				3802E20A2CE7C3F600EA0D51 /* Configurations */,
+				3802E1C02CE7C21300EA0D51 /* fsmk */,
+				3802E2002CE7C34300EA0D51 /* ScribbleFSMKTests */,
+				3802E1DF2CE7C27C00EA0D51 /* _fsmk */,
+				3802E2042CE7C39800EA0D51 /* Frameworks */,
+				3802E1BF2CE7C21300EA0D51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3802E1BF2CE7C21300EA0D51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3802E1BE2CE7C21300EA0D51 /* fsmk.framework */,
+				3802E1C82CE7C21300EA0D51 /* ScribbleFSMKTests.xctest */,
+				3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3802E2042CE7C39800EA0D51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38A3906D2CE7D70600730B3C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3802E20A2CE7C3F600EA0D51 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */,
+				3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3802E1B92CE7C21300EA0D51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1D92CE7C27C00EA0D51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3802E1BD2CE7C21300EA0D51 /* fsmk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3802E1D12CE7C21300EA0D51 /* Build configuration list for PBXNativeTarget "fsmk" */;
+			buildPhases = (
+				3802E1B92CE7C21300EA0D51 /* Headers */,
+				3802E1BA2CE7C21300EA0D51 /* Sources */,
+				3802E1BB2CE7C21300EA0D51 /* Frameworks */,
+				3802E1BC2CE7C21300EA0D51 /* Resources */,
+				3802E2092CE7C39800EA0D51 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3802E2082CE7C39800EA0D51 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3802E1C02CE7C21300EA0D51 /* fsmk */,
+			);
+			name = fsmk;
+			packageProductDependencies = (
+			);
+			productName = ScribbleFSMK;
+			productReference = 3802E1BE2CE7C21300EA0D51 /* fsmk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3802E1C72CE7C21300EA0D51 /* ScribbleFSMKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3802E1D62CE7C21300EA0D51 /* Build configuration list for PBXNativeTarget "ScribbleFSMKTests" */;
+			buildPhases = (
+				3802E1C42CE7C21300EA0D51 /* Sources */,
+				3802E1C52CE7C21300EA0D51 /* Frameworks */,
+				3802E1C62CE7C21300EA0D51 /* Resources */,
+				38A3906C2CE7D6B600730B3C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3802E1CB2CE7C21300EA0D51 /* PBXTargetDependency */,
+				38A3906B2CE7D6B600730B3C /* PBXTargetDependency */,
+			);
+			name = ScribbleFSMKTests;
+			packageProductDependencies = (
+			);
+			productName = ScribbleFSMKTests;
+			productReference = 3802E1C82CE7C21300EA0D51 /* ScribbleFSMKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3802E1DD2CE7C27C00EA0D51 /* _fsmk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3802E1F02CE7C27C00EA0D51 /* Build configuration list for PBXNativeTarget "_fsmk" */;
+			buildPhases = (
+				3802E1D92CE7C27C00EA0D51 /* Headers */,
+				3802E1DA2CE7C27C00EA0D51 /* Sources */,
+				3802E1DB2CE7C27C00EA0D51 /* Frameworks */,
+				3802E1DC2CE7C27C00EA0D51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3802E1DF2CE7C27C00EA0D51 /* _fsmk */,
+			);
+			name = _fsmk;
+			packageProductDependencies = (
+			);
+			productName = _fsmk;
+			productReference = 3802E1DE2CE7C27C00EA0D51 /* _fsmk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3802E1B52CE7C21300EA0D51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3802E1BD2CE7C21300EA0D51 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3802E1C72CE7C21300EA0D51 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					3802E1DD2CE7C27C00EA0D51 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 3802E1B82CE7C21300EA0D51 /* Build configuration list for PBXProject "ScribbleFSMK" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3802E1B42CE7C21300EA0D51;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3802E1BF2CE7C21300EA0D51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3802E1BD2CE7C21300EA0D51 /* fsmk */,
+				3802E1C72CE7C21300EA0D51 /* ScribbleFSMKTests */,
+				3802E1DD2CE7C27C00EA0D51 /* _fsmk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3802E1BC2CE7C21300EA0D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3802E20F2CE7C4D900EA0D51 /* Stable.xcconfig in Resources */,
+				3802E2102CE7C4D900EA0D51 /* DEBUB.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1C62CE7C21300EA0D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1DC2CE7C27C00EA0D51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3802E20D2CE7C4D900EA0D51 /* Stable.xcconfig in Resources */,
+				3802E20E2CE7C4D900EA0D51 /* DEBUB.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3802E1BA2CE7C21300EA0D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1C42CE7C21300EA0D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3802E1DA2CE7C27C00EA0D51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3802E1CB2CE7C21300EA0D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3802E1BD2CE7C21300EA0D51 /* fsmk */;
+			targetProxy = 3802E1CA2CE7C21300EA0D51 /* PBXContainerItemProxy */;
+		};
+		3802E2082CE7C39800EA0D51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3802E1DD2CE7C27C00EA0D51 /* _fsmk */;
+			targetProxy = 3802E2072CE7C39800EA0D51 /* PBXContainerItemProxy */;
+		};
+		38A3906B2CE7D6B600730B3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3802E1DD2CE7C27C00EA0D51 /* _fsmk */;
+			targetProxy = 38A3906A2CE7D6B600730B3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3802E1D22CE7C21300EA0D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W93RMB5CDG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhsystems.ScribbleFSMK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		3802E1D32CE7C21300EA0D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W93RMB5CDG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhsystems.ScribbleFSMK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		3802E1D42CE7C21300EA0D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3802E1D52CE7C21300EA0D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3802E1D72CE7C21300EA0D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W93RMB5CDG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhsystems.ScribbleFSMKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		3802E1D82CE7C21300EA0D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W93RMB5CDG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhsystems.ScribbleFSMKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		3802E1F12CE7C27C00EA0D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20B2CE7C4D900EA0D51 /* DEBUB.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W93RMB5CDG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nhsystems.-fsmk";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		3802E1F22CE7C27C00EA0D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E20C2CE7C4D900EA0D51 /* Stable.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W93RMB5CDG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nhsystems.-fsmk";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3802E1B82CE7C21300EA0D51 /* Build configuration list for PBXProject "ScribbleFSMK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3802E1D42CE7C21300EA0D51 /* Debug */,
+				3802E1D52CE7C21300EA0D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3802E1D12CE7C21300EA0D51 /* Build configuration list for PBXNativeTarget "fsmk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3802E1D22CE7C21300EA0D51 /* Debug */,
+				3802E1D32CE7C21300EA0D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3802E1D62CE7C21300EA0D51 /* Build configuration list for PBXNativeTarget "ScribbleFSMKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3802E1D72CE7C21300EA0D51 /* Debug */,
+				3802E1D82CE7C21300EA0D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3802E1F02CE7C27C00EA0D51 /* Build configuration list for PBXNativeTarget "_fsmk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3802E1F12CE7C27C00EA0D51 /* Debug */,
+				3802E1F22CE7C27C00EA0D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3802E1B52CE7C21300EA0D51 /* Project object */;
+}
