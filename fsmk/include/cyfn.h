@@ -66,8 +66,7 @@
 #endif
 
 /**
- * @struct cyfn_ctx
- * @brief A structure that holds the context for AES encryption and decryption.
+ * A structure that holds the context for AES encryption and decryption.
  *
  * This structure contains the expanded key and, optionally, the initialization vector (IV).
  *
@@ -83,7 +82,7 @@ struct cyfn_ctx {
 };
 
 /**
- * @brief Initializes the encryption context with the provided key.
+ * Initializes the encryption context with the provided key.
  *
  * @param ctx A pointer to the AES context structure.
  * @param key A pointer to the encryption key.
@@ -93,7 +92,7 @@ void cyfn_init_ctx(struct cyfn_ctx *ctx, const uint8_t *key);
 #if (defined(CYFN_CBC) && (CYFN_CBC == 1)) || (defined(CYFN_CTR) && (CYFN_CTR == 1))
 
 /**
- * @brief Initializes the encryption context with the provided key and IV.
+ * Initializes the encryption context with the provided key and IV.
  *
  * @param ctx A pointer to the AES context structure.
  * @param key A pointer to the encryption key.
@@ -102,7 +101,7 @@ void cyfn_init_ctx(struct cyfn_ctx *ctx, const uint8_t *key);
 void cyfn_init_ctx_iv(struct cyfn_ctx *ctx, const uint8_t *key, const uint8_t *iv);
 
 /**
- * @brief Updates the IV in the encryption context.
+ * Updates the IV in the encryption context.
  *
  * @param ctx A pointer to the AES context structure.
  * @param iv A pointer to the new initialization vector (IV).
@@ -113,7 +112,7 @@ void cyfn_ctx_set_iv(struct cyfn_ctx *ctx, const uint8_t *iv);
 #if defined(CYFN_ECB) && (CYFN_ECB == 1)
 
 /**
- * @brief Encrypts a single block of data using AES in ECB mode.
+ * Encrypts a single block of data using AES in ECB mode.
  *
  * @param ctx A pointer to the AES context structure.
  * @param buf A pointer to the data to be encrypted.
@@ -121,7 +120,7 @@ void cyfn_ctx_set_iv(struct cyfn_ctx *ctx, const uint8_t *iv);
 void cyfn_ecb_encrypt(const struct cyfn_ctx* ctx, uint8_t* buf);
 
 /**
- * @brief Decrypts a single block of data using AES in ECB mode.
+ * Decrypts a single block of data using AES in ECB mode.
  *
  * @param ctx A pointer to the AES context structure.
  * @param buf A pointer to the data to be decrypted.
@@ -134,7 +133,7 @@ void cyfn_ecb_decrypt(const struct cyfn_ctx* ctx, uint8_t* buf);
 //        no IV should ever be reused with the same key
 
 /**
- * @brief Encrypts data using AES in CBC mode.
+ * Encrypts data using AES in CBC mode.
  *
  * @note The IV must be set via `cyfn_init_ctx_iv` or `cyfn_ctx_set_iv`.
  *       Each key-IV pair must be unique.
@@ -146,7 +145,7 @@ void cyfn_ecb_decrypt(const struct cyfn_ctx* ctx, uint8_t* buf);
 void cyfn_cbc_encrypt_buffer(struct cyfn_ctx* ctx, uint8_t* buf, size_t length);
 
 /**
- * @brief Decrypts data using AES in CBC mode.
+ * Decrypts data using AES in CBC mode.
  *
  * @note The IV must be set via `cyfn_init_ctx_iv` or `cyfn_ctx_set_iv`.
  *       Each key-IV pair must be unique.
@@ -168,7 +167,7 @@ void cyfn_cbc_decrypt_buffer(struct cyfn_ctx* ctx, uint8_t* buf, size_t length);
 //        no IV should ever be reused with the same key
 
 /**
- * @brief Encrypts or decrypts data using AES in CTR mode.
+ * Encrypts or decrypts data using AES in CTR mode.
  *
  * @note The IV is incremented for every block and used as part of the XOR operation.
  *       Each key-IV pair must be unique.
