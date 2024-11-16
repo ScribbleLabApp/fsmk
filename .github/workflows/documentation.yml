@@ -34,14 +34,14 @@ jobs:
           rm -rf ~/Library/Developer/Xcode/DerivedData
       - name: Build DocC
         run: |
-          xcodebuild docbuild -scheme fmsk \
+          xcodebuild docbuild -scheme fsmk \
             -derivedDataPath /tmp/docbuild \
             -destination 'generic/platform=iOS' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO;
           $(xcrun --find docc) process-archive \
-            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/fmsk.doccarchive \
-            --hosting-base-path fmsk \
+            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/fsmk.doccarchive \
+            --hosting-base-path fsmk \
             --output-path docs;
-          echo "<script>window.location.href += \"/documentation/fmsk\"</script>" > docs/index.html;
+          echo "<script>window.location.href += \"/documentation/fsmk\"</script>" > docs/index.html;
 
       - name: List docs contents (DDEBUG ONLY)
         run: ls -lah docs
