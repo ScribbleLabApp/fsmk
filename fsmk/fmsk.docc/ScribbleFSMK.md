@@ -51,7 +51,6 @@ fsmk serves as the backbone of file management for ScribbleLab, providing the in
 
 - <doc:fsmkiod>
 
-
 ### FSMK Logging Stream (fsmk_logstr)
 
 - <doc:fsmk_logstr>
